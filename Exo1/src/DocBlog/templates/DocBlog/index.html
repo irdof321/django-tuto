@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Heloo</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>Heloo</h1>
+    <p>Bonjour et bienvenue</p>
+    <h2>from context</h2>
+    <p> {{ message }}</p>
+    <h2>date</h2>
+    <p> {{ date|date:"d F Y" }}</p>
+</body>
+</html>
